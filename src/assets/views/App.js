@@ -10,6 +10,8 @@ import Navigation from './Navigation/Navigation';
 import Home from './Example/Home';
 import ListUser from './User/ListUser';
 import DetailUser from './User/DetailUser';
+import Header from './TodoListHooks/Header';
+import FormTodo from './TodoListClass/FormTodo';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <Route path="/cpnparent" element={<ComponentParent />} />
           <Route path="/users" element={<ListUser />} />
           <Route path="/users/:id" element={<DetailUser />} />
+          <Route path="/hook" element={<Header />} />
+          <Route path="/class" element={<FormTodo />} />
           <Route path="/" element={<Home />} />
         </Routes>
 

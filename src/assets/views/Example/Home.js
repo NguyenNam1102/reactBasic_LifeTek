@@ -3,6 +3,8 @@ import { Player } from '@lottiefiles/react-lottie-player';
 import { toast } from 'react-toastify';
 import logo from '../../images/logoTea.png';
 import './Demo.scss';
+import Button from '@mui/material/Button';
+
 
 class Home extends React.Component {
 
@@ -22,6 +24,14 @@ class Home extends React.Component {
 
                 <p onClick={() => this.handleClickTea()}>
                     LifeTek
+                    <p>
+                        <Button variant="contained">
+                            Login
+                        </Button>
+                        <Button variant="solid" color="primary">
+                            Login
+                        </Button>
+                    </p>
                     <Player
                         src='https://assets9.lottiefiles.com/packages/lf20_gqn2n5rs.json'
                         className="player"

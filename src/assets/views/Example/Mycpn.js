@@ -73,20 +73,22 @@ class Mycpn extends React.Component {
                     <button onClick={() => this.handleClickBtn()}> Click me</button>
                 </div> */}
 
-                <AddComponent
-                    addNewJob={this.addNewJob}
-                />
+                <div>
+                    <AddComponent
+                        addNewJob={this.addNewJob}
+                    />
 
 
-                {/* <Childcpn name="one"/>
+                    {/* <Childcpn name="one"/>
             <Childcpn name="two"/>
             <Childcpn name="three"/> */}
 
-                <Childcpn
-                    arrJobs={this.state.arrJobs}
-                    arrCity={this.state.arrCity}
-                    deleteAJob={this.deleteAJob}
-                />
+                    <Childcpn
+                        arrJobs={this.state.arrJobs}
+                        arrCity={this.state.arrCity}
+                        deleteAJob={this.deleteAJob}
+                    />
+                </div>
             </>
 
         )
